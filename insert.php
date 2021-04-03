@@ -4,7 +4,7 @@
 
   date_default_timezone_set('Asia/Kuala_Lumpur');
 
-  $fingerId = $_GET['id'];
+  $fingerId = $_GET['stat'];
   $name = "";
   $location = "";
   $timestamp = date("Y.m.d-h.i.s.a");
