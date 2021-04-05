@@ -16,7 +16,7 @@
   $resultCheck = mysqli_num_rows($result);
 
   if($resultCheck > 0) {
-    while($row = mysqli_fetch_assoc($result))
+    if($row = mysqli_fetch_assoc($result))
     {
       $name = $row['name'];
       $matrix = $row['location'];
