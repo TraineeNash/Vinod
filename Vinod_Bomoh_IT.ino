@@ -349,7 +349,7 @@ void sendStatus(String finger_id) {
   HTTPClient http;
   
   //url for the script to send value to database
-  http.begin("http://192.168.43.84/nas/onclick.php?type="+rfid+"&&stat="+finger_id);
+  http.begin("http://192.168.43.84/nas/insert.php?type="+rfid+"&&stat="+finger_id);
 
   int httpCode = http.GET();
   if (httpCode > 0) 
