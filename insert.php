@@ -11,7 +11,7 @@
 
   // get the detail from the db
 
-  $sql = "SELECT * FROM student WHERE id = '$fingerId'";
+  $sql = "SELECT * FROM info WHERE id = '$fingerId'";
   $result = mysqli_query($conn, $sql);
   $resultCheck = mysqli_num_rows($result);
 
@@ -24,7 +24,7 @@
     // echo $name.$matrix;
 
     // submit attendance
-    $sql = "INSERT INTO student_attendance (id, nama, masa, `alamat`)
+    $sql = "INSERT INTO pelajar (id, nama, masa, `alamat`)
             VALUES ('$fingerId', '$name', '$timestamp', '$matrix');";
     $result = mysqli_query($conn, $sql);
 
