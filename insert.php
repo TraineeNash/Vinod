@@ -24,8 +24,8 @@
     // echo $name.$matrix;
 
     // submit attendance
-    $sql = "INSERT INTO student_attendance (nama, masa, `alamat`)
-            VALUES ('$name', '$timestamp', '$matrix');";
+    $sql = "INSERT INTO student_attendance (id, nama, masa, `alamat`)
+            VALUES ('$fingerId', '$name', '$timestamp', '$matrix');";
     $result = mysqli_query($conn, $sql);
 
   } else {
